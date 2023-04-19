@@ -3,23 +3,29 @@
 int main()
 {
 
-    int numero, contador = 0, afk = 0;
+    int numero, contador = 1, fatorial, numeroBkp;
 
-    printf("Digite o número: ");
+    printf("Digite N: ");
     scanf("%d", &numero);
 
-    numero = contador;
+    numeroBkp = numero;
 
-    while (contador < 2)
+    if (numero > 1)
     {
-        op = numero * 
+        while (contador < numeroBkp)
+        {
+            fatorial = (numeroBkp - contador);
+            numero = numero * fatorial;
 
-        numero *= (numero - contador);
+            contador++;
+        }
 
-        contador--;
+        printf("O fatorial de %d e' %d", numeroBkp, numero);
     }
-
-    printf("%d", numero / );
+    else
+    {
+        printf("O fatorial de %d e' 1", numeroBkp);
+    }
 
     return 0;
 }
