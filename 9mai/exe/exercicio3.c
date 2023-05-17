@@ -11,7 +11,7 @@ int main()
   {
     while (contadorColuna <= i)
     {
-      printf("%d ", j);
+      printf("%2d ", j);
       j++;
       contadorColuna++;
     }
