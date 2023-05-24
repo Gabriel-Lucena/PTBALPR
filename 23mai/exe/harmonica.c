@@ -1,25 +1,24 @@
 #include <stdio.h>
 
-int potencia(int base, int expoente);
-
 int main()
 {
 
-  double limite, soma = 0;
-  int n = 0, contador = 1;
+  double limite, soma = 0, n = 1;
+  int contador = 0;
 
-  printf("Digite um limite pequeno do que 1:");
+  printf("Digite um limite pequeno, menor do que 1:");
   scanf("%lf", &limite);
-  // a
-  while (1)
+
+  while (1 / (n * n) >= limite)
   {
+    soma += 1 / (n * n);
     n++;
     contador++;
-    soma += 1 / (n * n);
-    if (1 / (n * n) < limite) {
-      break;
-    }
   }
+
+  soma += 1 / (n * n);
+  n++;
+  contador++;
 
   printf("Foram somados %d termos\n", contador);
   printf("%g", soma);

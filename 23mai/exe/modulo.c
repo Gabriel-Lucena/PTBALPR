@@ -16,7 +16,7 @@ int main()
 double dist(double x, double y)
 {
 
-  double sumSqrt = pow(x, 2) + pow(y, 2);
+  double sumSqrt = x * x + y * y;
 
   double mod = sqrt(sumSqrt);
 
