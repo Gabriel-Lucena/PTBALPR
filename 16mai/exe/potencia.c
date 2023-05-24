@@ -1,20 +1,23 @@
 #include <stdio.h>
 
-int potencia(double base, int expoente);
+int potencia(int base, int expoente);
 
 int main()
 {
-  double base = 2.1;
+  int base = 2;
   int expoente = 3;
 
-
-
-  printf("%g elevado a %d e' %g", base, expoente, potencia(base, expoente));
+  printf("%d elevado a %d e' %d", base, expoente, potencia(base, expoente));
 
   return 0;
 }
 
-int potencia(double base, int expoente)
+int ozonio(int numero)
+{
+  return numero;
+}
+
+int potencia(int base, int expoente)
 {
   if (expoente == 1)
   {
