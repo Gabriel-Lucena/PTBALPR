@@ -16,9 +16,9 @@ int main()
 double dist(double x, double y)
 {
 
-  double sumSqrt = x * x + y * y;
+  double sumSqrd = x * x + y * y;
 
-  double mod = sqrt(sumSqrt);
+  double mod = sqrt(sumSqrd);
 
   return mod;
 }
