@@ -6,7 +6,6 @@ int main()
 
   for (int i = 0; i < 10; i++)
   {
-
     vetor_impares[i] = j;
     j += 2;
   }

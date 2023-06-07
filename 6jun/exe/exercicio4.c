@@ -18,8 +18,6 @@ int main()
     quantidade_char += 1;
   }
 
-  // printf("%c", string[9]);
-
   for (int i = quantidade_char; i >= 0; i--)
   {
     printf("%c", string[i]);
