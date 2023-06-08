@@ -1,5 +1,12 @@
 #include <stdio.h>
 
+/*
+ *  Autores:
+ *
+ *  Bruno de Almeida Otero
+ *  Gabriel Lucena da Cunha
+ */
+
 int main()
 {
   int opcao = 0;
@@ -38,9 +45,6 @@ int main()
 
     if (opcao == 1)
     {
-
-      printf("\n");
-
       printf("Digite o nu'mero de identificacao: ");
       scanf("%d", &identificacao);
 
@@ -77,7 +81,6 @@ int main()
       }
       else
       {
-        // maior peso
 
         if (peso > maior_peso)
         {
@@ -86,8 +89,6 @@ int main()
           maior_peso_idade = idade;
         }
 
-        // menor peso
-
         if (peso < menor_peso)
         {
           menor_peso_identificacao = identificacao;
@@ -95,15 +96,11 @@ int main()
           menor_peso_idade = idade;
         }
 
-        // maior idade
-
         if (idade > maior_idade)
         {
           maior_idade = idade;
           maior_idade_peso = peso;
         }
-
-        // menor idade
 
         if (idade < menor_idade)
         {
@@ -113,11 +110,11 @@ int main()
       }
     }
 
-    if (opcao == 2)
+    if ((opcao == 2) && (soma_das_idades != 0))
     {
       printf("\n");
 
-      printf("O total de peso dos animais recebidos\n");
+      printf("O total de peso dos animais recebidos: \n");
 
       printf("\n");
 
@@ -125,7 +122,7 @@ int main()
 
       printf("\n");
 
-      printf("A identificacao, o peso e a idade do animal mais pesado\n");
+      printf("A identificacao, o peso e a idade do animal mais pesado: \n");
 
       printf("\n");
 
@@ -135,7 +132,7 @@ int main()
 
       printf("\n");
 
-      printf("A identificacao, o peso e a idade do animal mais leve\n");
+      printf("A identificacao, o peso e a idade do animal mais leve: \n");
 
       printf("\n");
 
@@ -145,7 +142,7 @@ int main()
 
       printf("\n");
 
-      printf("A idade e peso do animal mais velho\n");
+      printf("A idade e peso do animal mais velho: \n");
 
       printf("\n");
 
@@ -154,11 +151,11 @@ int main()
 
       printf("\n");
 
-      printf("A idade e peso do animal mais novo\n");
+      printf("A idade e peso do animal mais novo: \n");
 
       printf("\n");
 
-      printf("Idade: %d\n", menor_peso);
+      printf("Idade: %d\n", menor_idade);
       printf("Peso: %g\n", menor_idade_peso);
 
       printf("\n");
@@ -171,7 +168,7 @@ int main()
 
       printf("\n");
 
-      printf("Preco total do lote: R$ %g\n", 15 * arroba * numero_de_animais);
+      printf("Preco total do lote: R$ %g\n", arroba * soma_dos_pesos / 15);
 
       printf("\n");
     }
