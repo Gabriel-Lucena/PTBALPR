@@ -175,8 +175,6 @@ int main()
 
     if (opcao == 3)
     {
-      arroba = 0;
-
       soma_dos_pesos = 0;
       soma_das_idades = 0;
 
