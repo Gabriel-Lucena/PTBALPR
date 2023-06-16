@@ -2,26 +2,35 @@
 
 void duplicata(int vetor[], int tamanho);
 
+int verifica(int vetor[], int tamanho);
+
+int verificar(int vetor[], int indice, int tamanho)
+{
+  int boolean = 1;
+
+  for (int i = 0; i < indice; i++)
+  {
+    if (vetor[i] == vetor[indice])
+    {
+      boolean = 0;
+    }
+  }
+
+  return boolean;
+}
+
 void duplicata(int vetor[], int tamanho)
 {
   for (int i = 0; i < tamanho; i++)
   {
     int boolean = 1;
 
-    for (int j = i; j <= 1; j--)
+    if (i != 0)
     {
-      if (j == i)
-      {
-        break;
-      }
-      else if ((vetor[i] == vetor[j]) && (i != j))
-      {
-        boolean = 0;
-        break;
-      }
+      boolean = verificar(vetor, i, tamanho);
     }
 
-    if (boolean == 1 || i == 0)
+    if (boolean)
     {
       printf("%d ", vetor[i]);
     }
