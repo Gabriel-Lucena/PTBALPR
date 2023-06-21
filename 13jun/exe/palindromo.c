@@ -29,21 +29,14 @@ int verificarPalindromo(char palavra[])
     }
   }
 
-  if (palindromo)
-  {
-    return palindromo;
-  }
-  else
-  {
-    return palindromo;
-  }
+  return palindromo;
 }
 
 int main()
 {
   char palavra[30];
 
-  strcpy(palavra, "arara");
+  strcpy(palavra, "ossaso");
 
   printf("%d", verificarPalindromo(palavra));
 
