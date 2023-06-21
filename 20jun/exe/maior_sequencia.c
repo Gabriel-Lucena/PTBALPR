@@ -7,13 +7,14 @@ int main()
   for (int i = 0; i < 15; i++)
   {
 
-    printf("Digite um numero: ");
+    printf("Digite um numero: \n");
     scanf("%d", &valor);
 
     tamanho += 1;
 
     if (valor == 999)
     {
+      tamanho -= 1;
       break;
     }
 
@@ -42,10 +43,11 @@ int main()
       maior_soma += sequencia[i];
     }
 
-    for (int i = 1; i < tamanho; i++)
-    {
+    int j, i = 1;
 
-      for (int j = i; j < i + 3; j++)
+    while (j < tamanho - 1)
+    {
+      for (j = i; j <= i + 3; j++)
       {
         soma += sequencia[j];
       }
@@ -55,7 +57,9 @@ int main()
         maior_soma = soma;
         maior_indice = i;
       }
+
       soma = 0;
+      i += 1;
     }
 
     printf("Soma=%d inicio=%d\n", maior_soma, maior_indice);
