@@ -1,0 +1,54 @@
+{
+  "entrada": [{
+      "identificacao": 1,
+      "peso": 20,
+      "idade": 20
+    },
+    {
+      "identificacao": 2,
+      "peso": 20,
+      "idade": 20
+    },
+    {
+      "identificacao": 3,
+      "peso": 20,
+      "idade": 20
+    },
+    {
+      "identificacao": 4,
+      "peso": 20,
+      "idade": 20
+    },
+    {
+      "identificacao": 5,
+      "peso": 20,
+      "idade": 20
+    },
+    {
+      "identificacao": 6,
+      "peso": 20,
+      "idade": 200
+    },
+
+    {
+      "identificacao": 7,
+      "peso": 2,
+      "idade": 23
+    },
+    {
+      "identificacao": 8,
+      "peso": 1000,
+      "idade": 10
+    },
+    {
+      "identificacao": 9,
+      "peso": 500,
+      "idade": 1000
+    },
+    {
+      "identificacao": 10,
+      "peso": 10,
+      "idade": 1
+    }
+  ]
+}
